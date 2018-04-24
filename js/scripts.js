@@ -66,10 +66,12 @@ function getHeroData() {
 
 let leftBattletagData = {};
 let rightBattletagData = {};
+let leftBattletag = "";
+let rightBattletag = "";
 
 async function getBattletagData(e) {
-  let leftBattletag = document.getElementById('left-battletag').value.replace("#", "-");
-  let rightBattletag = document.getElementById('right-battletag').value.replace("#", "-");
+  leftBattletag = document.getElementById('left-battletag').value.replace("#", "-");
+  rightBattletag = document.getElementById('right-battletag').value.replace("#", "-");
   console.log(`${leftBattletag} + ${rightBattletag}`);
 
   if (leftBattletag && rightBattletag) {
@@ -80,10 +82,11 @@ async function getBattletagData(e) {
   } else if (!leftBattletag && rightBattletag) {
     rightBattletagData = await loadBattletag(rightBattletag); console.log(rightBattletagData);
   }
+  compareBattletags();
 }
 
 function loadBattletag(battletag) {
-  return axios.get(`https://owapi.net/api/v3/u/${battletag}/blob`)
+  return axios.get(`http://localhost:4444/api/v3/u/${battletag}/blob`)
   .then(function (response) {
     console.log(response);
     return response.data;
@@ -94,9 +97,28 @@ function loadBattletag(battletag) {
   });
 }
 
+function compareBattletags () {
+  if (!leftHero || !rightHero) {
+    return false;
+  }
+  let leftWinrate = leftBattletagData.us.heroes.stats.competitive[leftHero].general_stats.win_percentage;
+  let rightWinrate = rightBattletagData.us.heroes.stats.competitive[rightHero].general_stats.win_percentage;
+  if (leftWinrate > rightWinrate) {
+    dqs('#info-pane').innerHTML = `${leftBattletag} wins!`;
+    dqs('#info-pane').innerHTML += `${leftWinrate} vs ${rightWinrate}`;
+  }
+  else if (rightWinrate > leftWinrate) {
+    dqs('#info-pane').innerHTML = `${rightBattletag} wins!`;
+    dqs('#info-pane').innerHTML += `${leftWinrate} vs ${rightWinrate}`;
+  }
+}
+
 let heroMatchupInfo = {
   doomfist: {
     self: "<p>Info about Doomfist</p>",
     doomfist: "<p>Stay out of your way</p>",
-    bastion: "<p>Doomfist vs Bastion</p>" }
+    bastion: "<p>Doomfist vs Bastion</p>" },
+  dva: {
+    self: "<p>D.Va</p>",
+    dva: "<p>D.Va</p>" }
 };

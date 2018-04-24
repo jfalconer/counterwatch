@@ -20,7 +20,11 @@ body {
 }
 
 .header {
-  padding:25px
+  padding:25px;
+}
+
+#battletag-selector {
+  padding: 25px 0 25px 0;
 }
 
 .h1-page-title {

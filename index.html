@@ -22,10 +22,37 @@
       </div>
     </div>
 
+    <div class="row" id="battletag-selector">
+      <div class="col-3">
+        <h3>You</h3>
+        <div class="input-group mb-3">
+          <!--<div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon1">@</span>
+          </div>-->
+          <input type="text" class="form-control" id="left-battletag" placeholder="Battletag" aria-label="Battletag" aria-describedby="basic-addon1">
+        </div>
+      </div>
+      <div class="col-1"></div>
+      <div class="col-4 text-center">
+        <button type="button" class="btn btn-primary btn-lg" id="matchem-button">Match 'em</button>
+      </div>
+      <div class="col-1"></div>
+      <div class="col-3">
+        <h3>Them</h3>
+        <div class="input-group mb-3">
+          <!--<div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon1">@</span>
+          </div>-->
+          <input type="text" class="form-control" id="right-battletag" placeholder="Battletag" aria-label="Battletag" aria-describedby="basic-addon1">
+        </div>
+      </div>
+
+    </div>
+
     <div class="row">
 
       <div class="col-3" id="left-picker">
-        <h3>You</h3>
+
         <div class="list-group left-heroes" id="left-offense-heroes">
           <a href="#" class="list-group-item list-group-item-action active">
             Offense
@@ -88,14 +115,20 @@
       </div>
 
       <div class="col-1"></div>
-      <div class="col-4" id="info-pane">
-        <p>Lorem ipsum dolor. Sit amet donec. In pellentesque est. Porttitor integer sit nullam odio pulvinar. Mollis sed nam. Elit nibh eveniet. Vivamus pellentesque wisi cursus.</p><p>Nisl non massa. Quisque tristique quisque. Habitasse ante ut. Lorem vel quam. Massa justo wisi. Vitae proin sollicitudin. Imperdiet placerat ut mattis amet pellentesque pretium.</p><p>Nulla vitae mi. Vitae proin libero. Congue ornare porttitor. Fermentum sed eget. Vestibulum suspendisse nullam. Semper pellentesque in auctor ultricies a. Sagittis pretium sit duis.</p>
+
+      <div class="col-4">
+        <div id="info-pane">
+          <p>Lorem ipsum dolor. Sit amet donec. In pellentesque est. Porttitor integer sit nullam odio pulvinar. Mollis sed nam. Elit nibh eveniet. Vivamus pellentesque wisi cursus.</p><p>Nisl non massa. Quisque tristique quisque. Habitasse ante ut. Lorem vel quam. Massa justo wisi. Vitae proin sollicitudin. Imperdiet placerat ut mattis amet pellentesque pretium.</p><p>Nulla vitae mi. Vitae proin libero. Congue ornare porttitor. Fermentum sed eget. Vestibulum suspendisse nullam. Semper pellentesque in auctor ultricies a. Sagittis pretium sit duis.</p>
+        </div>
       </div>
+
+
+
 
 
       <div class="col-1"></div>
       <div class="col-3" id="right-picker">
-        <h3>Them</h3>
+
         <div class="list-group right-heroes" id="right-offense-heroes">
           <a href="#" class="list-group-item list-group-item-action active">
           Offense

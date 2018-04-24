@@ -1,0 +1,40 @@
+/*
+
+Reference:
+  - #f2ffff white (light blue)
+  - #060606 black
+  - #2f2526 dark brown
+  - #584f4a light brown
+  - #faa02e dark orange
+  - #fcbd49 light orange
+
+*/
+
+
+body {
+  background: #f7ffff !important;
+}
+
+.container {
+
+}
+
+.header {
+  padding:25px
+}
+
+.h1-page-title {
+
+}
+
+#left-picker {
+
+}
+
+#info-pane {
+
+
+}
+#right-picker {
+
+}

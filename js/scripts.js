@@ -17,7 +17,6 @@ const dqsa = (query) => document.querySelectorAll(query);
 
 let leftHero = "";
 let rightHero = "";
-dqs('#info-pane').innerHTML = `Select one hero for hero advice, or two for matchup advice. Battletags are optional.`;
 
 function setLeftHero (e) {
   let currentHero = e.target.dataset.hero

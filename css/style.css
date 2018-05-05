@@ -42,3 +42,7 @@ body {
 #right-picker {
 
 }
+
+.selected-hero {
+  background-color: #93baf9 !important;
+}

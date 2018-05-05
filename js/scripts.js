@@ -15,32 +15,44 @@ const dqsa = (query) => document.querySelectorAll(query);
     dqsa('#matchem-button').forEach(clickMatchem => clickMatchem.addEventListener('click', getBattletagData));
   });
 
-let leftHero = "";
-let rightHero = "";
+let leftHero = null;
+let rightHero = null;
+let selectedLeftHero = null;
+let selectedRightHero = null;
 
 function setLeftHero (e) {
-  let currentHero = e.target.dataset.hero
+  let currentHero = e.target.dataset.hero;
   if (leftHero === currentHero) {
     leftHero = "";
+    e.target.classList.toggle('selected-hero');
     console.log("leftHero cleared");
+    return;
   }
-  else {
-    leftHero = e.target.dataset.hero;
-    console.log(leftHero);
+  if (selectedLeftHero) {
+    selectedLeftHero.classList.remove('selected-hero');
   }
+  e.target.classList.toggle('selected-hero');
+  leftHero = e.target.dataset.hero;
+  console.log(`${leftHero} selected`);
+  selectedLeftHero = e.target;
   buildContent();
 };
 
 function setRightHero (e) {
-  let currentHero = e.target.dataset.hero
+  let currentHero = e.target.dataset.hero;
   if (rightHero === currentHero) {
     rightHero = "";
+    e.target.classList.toggle('selected-hero');
     console.log("rightHero cleared");
+    return;
   }
-  else {
-    rightHero = e.target.dataset.hero;
-    console.log(rightHero);
+  if (selectedRightHero) {
+    selectedRightHero.classList.remove('selected-hero');
   }
+  e.target.classList.toggle('selected-hero');
+  rightHero = e.target.dataset.hero;
+  console.log(`${rightHero} selected`);
+  selectedRightHero = e.target;
   buildContent();
 };
 

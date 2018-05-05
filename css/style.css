@@ -43,6 +43,12 @@ body {
 
 }
 
+.active {
+  background-color: #2f2526 !important;
+  border-color: #584f4a !important;
+  color: #fff !important;
+}
+
 .selected-hero {
-  background-color: #93baf9 !important;
+  background-color: #fcbd49 !important;
 }

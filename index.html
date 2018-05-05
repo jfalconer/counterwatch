@@ -16,8 +16,141 @@
   <div class="container">
     <div class="row">
       <div class="col header">
+        <h1 class="h1-page-title">Counterwatch</h1>
+      </div>
+    </div>
 
-          <h1 class="h1-page-title">Counterwatch</h1>
+
+
+    <div class="row">
+
+      <div class="col-3" id="left-picker">
+
+        <div class="list-group left-heroes" id="left-offense-heroes">
+          <a class="list-group-item list-group-item-action active">
+            Offense
+          </a>
+          <a data-hero="doomfist" class="hero-item list-group-item list-group-item-action">Doomfist</a>
+          <a data-hero="genji" class="hero-item list-group-item list-group-item-action">Genji</a>
+          <a data-hero="mccree" class="hero-item list-group-item list-group-item-action">McCree</a>
+          <a data-hero="pharah" class="hero-item list-group-item list-group-item-action">Pharah</a>
+          <a data-hero="reaper" class="hero-item list-group-item list-group-item-action">Reaper</a>
+          <a data-hero="soldier76" class="hero-item list-group-item list-group-item-action">Soldier: 76</a>
+          <a data-hero="sombra" class="hero-item list-group-item list-group-item-action">Sombra</a>
+          <a data-hero="tracer" class="hero-item list-group-item list-group-item-action">Tracer</a>
+        </div>
+
+        <br/>
+
+        <div class="list-group left-heroes" id="left-defense-heroes">
+          <a class="list-group-item list-group-item-action active">
+          Defense
+          </a>
+          <a data-hero="bastion" class="hero-item list-group-item list-group-item-action">Bastion</a>
+          <a data-hero="hanzo" class="hero-item list-group-item list-group-item-action">Hanzo</a>
+          <a data-hero="junkrat" class="hero-item list-group-item list-group-item-action">Junkrat</a>
+          <a data-hero="mei" class="hero-item list-group-item list-group-item-action">Mei</a>
+          <a data-hero="torbjorn" class="hero-item list-group-item list-group-item-action">Torbjörn</a>
+          <a data-hero="widowmaker" class="hero-item list-group-item list-group-item-action">Widowmaker</a>
+        </div>
+
+        <br/>
+
+        <div class="list-group left-heroes" id="left-tank-heroes">
+          <a class="list-group-item list-group-item-action active">
+          Tanks
+          </a>
+          <a data-hero="dva" class="hero-item list-group-item list-group-item-action">D.Va</a>
+          <a data-hero="orisa" class="hero-item list-group-item list-group-item-action">Orisa</a>
+          <a data-hero="reinhardt" class="hero-item list-group-item list-group-item-action">Reinhardt</a>
+          <a data-hero="roadhog" class="hero-item list-group-item list-group-item-action">Roadhog</a>
+          <a data-hero="winston" class="hero-item list-group-item list-group-item-action">Winston</a>
+          <a data-hero="zarya" class="hero-item list-group-item list-group-item-action">Zarya</a>
+        </div>
+
+        <br/>
+
+        <div class="list-group left-heroes" id="left-support-heroes">
+          <a class="list-group-item list-group-item-action active">
+          Support
+          </a>
+          <a data-hero="ana" class="hero-item list-group-item list-group-item-action">Ana</a>
+          <a data-hero="brigitte" class="hero-item list-group-item list-group-item-action">Brigitte</a>
+          <a data-hero="lucio" class="hero-item list-group-item list-group-item-action">Lúcio</a>
+          <a data-hero="mercy" class="hero-item list-group-item list-group-item-action">Mercy</a>
+          <a data-hero="moira" class="hero-item list-group-item list-group-item-action">Moira</a>
+          <a data-hero="symmetra" class="hero-item list-group-item list-group-item-action">Symmetra</a>
+          <a data-hero="zenyatta" class="hero-item list-group-item list-group-item-action">Zenyatta</a>
+        </div>
+      </div>
+
+      <div class="col-1"></div>
+
+      <div class="col-4">
+        <div id="info-pane">
+          <p>Select one hero for hero advice, or two for matchup advice. Battletags are optional.</p>
+        </div>
+      </div>
+
+      <div class="col-1"></div>
+      <div class="col-3" id="right-picker">
+
+        <div class="list-group right-heroes" id="right-offense-heroes">
+          <a class="list-group-item list-group-item-action active">
+          Offense
+          </a>
+          <a data-hero="doomfist" class="hero-item list-group-item list-group-item-action">Doomfist</a>
+          <a data-hero="genji" class="hero-item list-group-item list-group-item-action">Genji</a>
+          <a data-hero="mccree" class="hero-item list-group-item list-group-item-action">McCree</a>
+          <a data-hero="pharah" class="hero-item list-group-item list-group-item-action">Pharah</a>
+          <a data-hero="reaper" class="hero-item list-group-item list-group-item-action">Reaper</a>
+          <a data-hero="soldier76" class="hero-item list-group-item list-group-item-action">Soldier: 76</a>
+          <a data-hero="sombra" class="hero-item list-group-item list-group-item-action">Sombra</a>
+          <a data-hero="tracer" class="hero-item list-group-item list-group-item-action">Tracer</a>
+        </div>
+
+        <br/>
+
+        <div class="list-group right-heroes" id="right-defense-heroes">
+          <a class="list-group-item list-group-item-action active">
+          Defense
+          </a>
+          <a data-hero="bastion" class="hero-item list-group-item list-group-item-action">Bastion</a>
+          <a data-hero="hanzo" class="hero-item list-group-item list-group-item-action">Hanzo</a>
+          <a data-hero="junkrat" class="hero-item list-group-item list-group-item-action">Junkrat</a>
+          <a data-hero="mei" class="hero-item list-group-item list-group-item-action">Mei</a>
+          <a data-hero="torbjorn" class="hero-item list-group-item list-group-item-action">Torbjörn</a>
+          <a data-hero="widowmaker" class="hero-item list-group-item list-group-item-action">Widowmaker</a>
+        </div>
+
+        <br/>
+
+        <div class="list-group right-heroes" id="right-tank-heroes">
+          <a class="list-group-item list-group-item-action active">
+          Tanks
+          </a>
+          <a data-hero="dva" class="hero-item list-group-item list-group-item-action">D.Va</a>
+          <a data-hero="orisa" class="hero-item list-group-item list-group-item-action">Orisa</a>
+          <a data-hero="reinhardt" class="hero-item list-group-item list-group-item-action">Reinhardt</a>
+          <a data-hero="roadhog" class="hero-item list-group-item list-group-item-action">Roadhog</a>
+          <a data-hero="winston" class="hero-item list-group-item list-group-item-action">Winston</a>
+          <a data-hero="zarya" class="hero-item list-group-item list-group-item-action">Zarya</a>
+        </div>
+
+        <br/>
+
+        <div class="list-group right-heroes" id="right-support-heroes">
+          <a href="#" class="list-group-item list-group-item-action active">
+          Support
+          </a>
+          <a data-hero="ana" class="hero-item list-group-item list-group-item-action">Ana</a>
+          <a data-hero="brigitte" class="hero-item list-group-item list-group-item-action">Brigitte</a>
+          <a data-hero="lucio" class="hero-item list-group-item list-group-item-action">Lúcio</a>
+          <a data-hero="mercy" class="hero-item list-group-item list-group-item-action">Mercy</a>
+          <a data-hero="moira" class="hero-item list-group-item list-group-item-action">Moira</a>
+          <a data-hero="symmetra" class="hero-item list-group-item list-group-item-action">Symmetra</a>
+          <a data-hero="zenyatta" class="hero-item list-group-item list-group-item-action">Zenyatta</a>
+        </div>
 
       </div>
     </div>
@@ -34,6 +167,7 @@
       </div>
       <div class="col-1"></div>
       <div class="col-4 text-center">
+        <br>
         <button type="button" class="btn btn-primary btn-lg" id="matchem-button">Match 'em</button>
       </div>
       <div class="col-1"></div>
@@ -49,147 +183,6 @@
 
     </div>
 
-    <div class="row">
-
-      <div class="col-3" id="left-picker">
-
-        <div class="list-group left-heroes" id="left-offense-heroes">
-          <a href="#" class="list-group-item list-group-item-action active">
-            Offense
-          </a>
-          <a href="#" data-hero="doomfist" class="hero-item list-group-item list-group-item-action">Doomfist</a>
-          <a href="#" data-hero="genji" class="hero-item list-group-item list-group-item-action">Genji</a>
-          <a href="#" data-hero="mccree" class="hero-item list-group-item list-group-item-action">McCree</a>
-          <a href="#" data-hero="pharah" class="hero-item list-group-item list-group-item-action">Pharah</a>
-          <a href="#" data-hero="reaper" class="hero-item list-group-item list-group-item-action">Reaper</a>
-          <a href="#" data-hero="soldier76" class="hero-item list-group-item list-group-item-action">Soldier: 76</a>
-          <a href="#" data-hero="sombra" class="hero-item list-group-item list-group-item-action">Sombra</a>
-          <a href="#" data-hero="tracer" class="hero-item list-group-item list-group-item-action">Tracer</a>
-        </div>
-
-        <br/>
-
-        <div class="list-group left-heroes" id="left-defense-heroes">
-          <a href="#" class="list-group-item list-group-item-action active">
-          Defense
-          </a>
-          <a href="#" data-hero="bastion" class="hero-item list-group-item list-group-item-action">Bastion</a>
-          <a href="#" data-hero="hanzo" class="hero-item list-group-item list-group-item-action">Hanzo</a>
-          <a href="#" data-hero="junkrat" class="hero-item list-group-item list-group-item-action">Junkrat</a>
-          <a href="#" data-hero="mei" class="hero-item list-group-item list-group-item-action">Mei</a>
-          <a href="#" data-hero="torbjorn" class="hero-item list-group-item list-group-item-action">Torbjörn</a>
-          <a href="#" data-hero="widowmaker" class="hero-item list-group-item list-group-item-action">Widowmaker</a>
-        </div>
-
-        <br/>
-
-        <div class="list-group left-heroes" id="left-tank-heroes">
-          <a href="#" class="list-group-item list-group-item-action active">
-          Tanks
-          </a>
-          <a href="#" data-hero="dva" class="hero-item list-group-item list-group-item-action">D.Va</a>
-          <a href="#" data-hero="orisa" class="hero-item list-group-item list-group-item-action">Orisa</a>
-          <a href="#" data-hero="reinhardt" class="hero-item list-group-item list-group-item-action">Reinhardt</a>
-          <a href="#" data-hero="roadhog" class="hero-item list-group-item list-group-item-action">Roadhog</a>
-          <a href="#" data-hero="winston" class="hero-item list-group-item list-group-item-action">Winston</a>
-          <a href="#" data-hero="zarya" class="hero-item list-group-item list-group-item-action">Zarya</a>
-        </div>
-
-        <br/>
-
-        <div class="list-group left-heroes" id="left-support-heroes">
-          <a href="#" class="list-group-item list-group-item-action active">
-          Support
-          </a>
-          <a href="#" data-hero="ana" class="hero-item list-group-item list-group-item-action">Ana</a>
-          <a href="#" data-hero="brigitte" class="hero-item list-group-item list-group-item-action">Brigitte</a>
-          <a href="#" data-hero="lucio" class="hero-item list-group-item list-group-item-action">Lúcio</a>
-          <a href="#" data-hero="mercy" class="hero-item list-group-item list-group-item-action">Mercy</a>
-          <a href="#" data-hero="moira" class="hero-item list-group-item list-group-item-action">Moira</a>
-          <a href="#" data-hero="symmetra" class="hero-item list-group-item list-group-item-action">Symmetra</a>
-          <a href="#" data-hero="zenyatta" class="hero-item list-group-item list-group-item-action">Zenyatta</a>
-        </div>
-
-
-
-      </div>
-
-      <div class="col-1"></div>
-
-      <div class="col-4">
-        <div id="info-pane">
-          <p>Select one hero for hero advice, or two for matchup advice. Battletags are optional.</p>
-        </div>
-      </div>
-
-
-
-
-
-      <div class="col-1"></div>
-      <div class="col-3" id="right-picker">
-
-        <div class="list-group right-heroes" id="right-offense-heroes">
-          <a href="#" class="list-group-item list-group-item-action active">
-          Offense
-          </a>
-          <a href="#" data-hero="doomfist" class="hero-item list-group-item list-group-item-action">Doomfist</a>
-          <a href="#" data-hero="genji" class="hero-item list-group-item list-group-item-action">Genji</a>
-          <a href="#" data-hero="mccree" class="hero-item list-group-item list-group-item-action">McCree</a>
-          <a href="#" data-hero="pharah" class="hero-item list-group-item list-group-item-action">Pharah</a>
-          <a href="#" data-hero="reaper" class="hero-item list-group-item list-group-item-action">Reaper</a>
-          <a href="#" data-hero="soldier76" class="hero-item list-group-item list-group-item-action">Soldier: 76</a>
-          <a href="#" data-hero="sombra" class="hero-item list-group-item list-group-item-action">Sombra</a>
-          <a href="#" data-hero="tracer" class="hero-item list-group-item list-group-item-action">Tracer</a>
-        </div>
-
-        <br/>
-
-        <div class="list-group right-heroes" id="right-defense-heroes">
-          <a href="#" class="list-group-item list-group-item-action active">
-          Defense
-          </a>
-          <a href="#" data-hero="bastion" class="hero-item list-group-item list-group-item-action">Bastion</a>
-          <a href="#" data-hero="hanzo" class="hero-item list-group-item list-group-item-action">Hanzo</a>
-          <a href="#" data-hero="junkrat" class="hero-item list-group-item list-group-item-action">Junkrat</a>
-          <a href="#" data-hero="mei" class="hero-item list-group-item list-group-item-action">Mei</a>
-          <a href="#" data-hero="torbjorn" class="hero-item list-group-item list-group-item-action">Torbjörn</a>
-          <a href="#" data-hero="widowmaker" class="hero-item list-group-item list-group-item-action">Widowmaker</a>
-        </div>
-
-        <br/>
-
-        <div class="list-group right-heroes" id="right-tank-heroes">
-          <a href="#" class="list-group-item list-group-item-action active">
-          Tanks
-          </a>
-          <a href="#" data-hero="dva" class="hero-item list-group-item list-group-item-action">D.Va</a>
-          <a href="#" data-hero="orisa" class="hero-item list-group-item list-group-item-action">Orisa</a>
-          <a href="#" data-hero="reinhardt" class="hero-item list-group-item list-group-item-action">Reinhardt</a>
-          <a href="#" data-hero="roadhog" class="hero-item list-group-item list-group-item-action">Roadhog</a>
-          <a href="#" data-hero="winston" class="hero-item list-group-item list-group-item-action">Winston</a>
-          <a href="#" data-hero="zarya" class="hero-item list-group-item list-group-item-action">Zarya</a>
-        </div>
-
-        <br/>
-
-        <div class="list-group right-heroes" id="right-support-heroes">
-          <a href="#" class="list-group-item list-group-item-action active">
-          Support
-          </a>
-          <a href="#" data-hero="ana" class="hero-item list-group-item list-group-item-action">Ana</a>
-          <a href="#" data-hero="brigitte" class="hero-item list-group-item list-group-item-action">Brigitte</a>
-          <a href="#" data-hero="lucio" class="hero-item list-group-item list-group-item-action">Lúcio</a>
-          <a href="#" data-hero="mercy" class="hero-item list-group-item list-group-item-action">Mercy</a>
-          <a href="#" data-hero="moira" class="hero-item list-group-item list-group-item-action">Moira</a>
-          <a href="#" data-hero="symmetra" class="hero-item list-group-item list-group-item-action">Symmetra</a>
-          <a href="#" data-hero="zenyatta" class="hero-item list-group-item list-group-item-action">Zenyatta</a>
-        </div>
-
-
-      </div>
-    </div>
-
   </div>
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -200,5 +193,6 @@
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   <!-- Local scripts -->
   <script src="js/scripts.js"></script>
+  <script src="js/heromatchups.js"></script>
 </body>
 </html>

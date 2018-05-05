@@ -5,114 +5,114 @@ let heroMatchupInfo = {
     self: ``,
     // Doomfist vs offense
     doomfist: {
-      matchup: `neutral`;
+      matchup: `neutral`,
       strategy: ``,
     },
     genji: {
-      matchup: `softcounter`;
+      matchup: `softcounter`,
       strategy: ``,
     },
     mccree: {
-      matchup: `weak`;
+      matchup: `weak`,
       strategy: ``,
     },
     pharah: {
-      matchup: `veryweak`;
+      matchup: `veryweak`,
       strategy: ``,
     },
     reaper: {
-      matchup: `neutral`;
+      matchup: `neutral`,
       strategy: ``,
     },
     soldier76: {
-      matchup: `weak`;
+      matchup: `weak`,
       strategy: ``,
     },
     sombra: {
-      matchup: `veryweak`;
+      matchup: `veryweak`,
       strategy: ``,
     },
     tracer: {
-      matchup: `neutral`;
+      matchup: `neutral`,
       strategy: ``,
     },
     // Doomfist vs defense
     bastion: {
-      matchup: `neutral`;
+      matchup: `neutral`,
       strategy: ``,
     },
     hanzo: {
-      matchup: `neutral`;
+      matchup: `neutral`,
       strategy: ``,
     },
     junkrat: {
-      matchup: `neutral`;
+      matchup: `neutral`,
       strategy: ``,
     },
     mei: {
-      matchup: `neutral`;
+      matchup: `neutral`,
       strategy: ``,
     },
     torbjorn: {
-      matchup: `neutral`;
+      matchup: `neutral`,
       strategy: ``,
     },
     widowmaker: {
-      matchup: `neutral`;
+      matchup: `neutral`,
       strategy: ``,
     },
     // Doomfist vs tanks
     dva: {
-      matchup: `softcounter`;
+      matchup: `softcounter`,
       strategy: ``,
     },
     orisa: {
-      matchup: `weak`;
+      matchup: `weak`,
       strategy: ``,
     },
     reinhardt: {
-      matchup: `softcounter`;
+      matchup: `softcounter`,
       strategy: ``,
     },
     roadhog: {
-      matchup: `neutral`;
+      matchup: `neutral`,
       strategy: ``,
     },
     winston: {
-      matchup: `neutral`;
+      matchup: `neutral`,
       strategy: ``,
     },
     zarya: {
-      matchup: `neutral`;
+      matchup: `neutral`,
       strategy: ``,
     },
     // Doomfist vs support
     ana: {
-      matchup: `neutral`;
+      matchup: `neutral`,
       strategy: ``,
     },
     brigitte: {
-      matchup: `neutral`;
+      matchup: `neutral`,
       strategy: ``,
     },
     lucio: {
-      matchup: `neutral`;
+      matchup: `neutral`,
       strategy: ``,
     },
     mercy: {
-      matchup: `neutral`;
+      matchup: `neutral`,
       strategy: ``,
     },
     moira: {
-      matchup: `neutral`;
+      matchup: `neutral`,
       strategy: ``,
     },
     symmetra: {
-      matchup: `neutral`;
+      matchup: `neutral`,
       strategy: ``,
     },
     zenyatta: {
-      matchup: `neutral`;
+      matchup: `neutral`,
       strategy: ``,
     },
   },
@@ -120,114 +120,114 @@ let heroMatchupInfo = {
     self: ``,
     // Genji vs offense
     doomfist: {
-      matchup: `weak`;
+      matchup: `weak`,
       strategy: ``,
     },
     genji: {
-      matchup: `neutral`;
+      matchup: `neutral`,
       strategy: ``,
     },
     mccree: {
-      matchup: `neutral`;
+      matchup: `neutral`,
       strategy: ``,
     },
     pharah: {
-      matchup: `weak`;
+      matchup: `weak`,
       strategy: ``,
     },
     reaper: {
-      matchup: `neutral`;
+      matchup: `neutral`,
       strategy: ``,
     },
     soldier76: {
-      matchup: `neutral`;
+      matchup: `neutral`,
       strategy: ``,
     },
     sombra: {
-      matchup: `neutral`;
+      matchup: `neutral`,
       strategy: ``,
     },
     tracer: {
-      matchup: `neutral`;
+      matchup: `neutral`,
       strategy: ``,
     },
     // Genji vs defense
     bastion: {
-      matchup: `softcounter`;
+      matchup: `softcounter`,
       strategy: ``,
     },
     hanzo: {
-      matchup: `hardcounter`;
+      matchup: `hardcounter`,
       strategy: ``,
     },
     junkrat: {
-      matchup: `neutral`;
+      matchup: `neutral`,
       strategy: ``,
     },
     mei: {
-      matchup: `neutral`;
+      matchup: `neutral`,
       strategy: ``,
     },
     torbjorn: {
-      matchup: `neutral`;
+      matchup: `neutral`,
       strategy: ``,
     },
     widowmaker: {
-      matchup: `hardcounter`;
+      matchup: `hardcounter`,
       strategy: ``,
     },
     // Genji vs tanks
     dva: {
-      matchup: `neutral`;
+      matchup: `neutral`,
       strategy: ``,
     },
     orisa: {
-      matchup: `softcounter`;
+      matchup: `softcounter`,
       strategy: ``,
     },
     reinhardt: {
-      matchup: `neutral`;
+      matchup: `neutral`,
       strategy: ``,
     },
     roadhog: {
-      matchup: `neutral`;
+      matchup: `neutral`,
       strategy: ``,
     },
     winston: {
-      matchup: `veryweak`;
+      matchup: `veryweak`,
       strategy: ``,
     },
     zarya: {
-      matchup: `veryweak`;
+      matchup: `veryweak`,
       strategy: ``,
     },
     // Genji vs support
     ana: {
-      matchup: `neutral`;
+      matchup: `neutral`,
       strategy: ``,
     },
     brigitte: {
-      matchup: `weak`;
+      matchup: `weak`,
       strategy: ``,
     },
     lucio: {
-      matchup: `neutral`;
+      matchup: `neutral`,
       strategy: ``,
     },
     mercy: {
-      matchup: `hardcounter`;
+      matchup: `hardcounter`,
       strategy: ``,
     },
     moira: {
-      matchup: `neutral`;
+      matchup: `neutral`,
       strategy: ``,
     },
     symmetra: {
-      matchup: `neutral`;
+      matchup: `neutral`,
       strategy: ``,
     },
     zenyatta: {
-      matchup: `neutral`;
+      matchup: `neutral`,
       strategy: ``,
     },
   },

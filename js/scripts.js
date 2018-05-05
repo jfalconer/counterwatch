@@ -62,17 +62,16 @@ function buildContent () {
   } else if (leftHero || rightHero) {
     printHeroData();
   } else {
-    dqs('#info-pane').innerHTML = `Select one hero for hero advice, or two for matchup advice. Battletags are optional.`;
+    dqs('#info-pane').innerHTML = `<p>Select one hero for hero advice, or two for matchup advice. Battletags are optional.</p>`;
   }
 };
 
 function printMatchupData() {
-  dqs('#info-pane').innerHTML = `<p>Two heroes, ${leftHero} and ${rightHero}, have been set</p>` +
-                                `${heroMatchupInfo[leftHero][rightHero]}`;
+  dqs('#info-pane').innerHTML = `<p>${heroMatchupInfo[leftHero][rightHero]}</p>`;
 };
 function printHeroData() {
-  dqs('#info-pane').innerHTML = `${heroMatchupInfo[leftHero || rightHero].self}
-                                <strong>Select another hero for matchup advice.</strong>`;
+  dqs('#info-pane').innerHTML = `<p>${heroMatchupInfo[leftHero || rightHero].self}</p>
+                                <p><strong>Select another hero for matchup advice.</strong></p>`;
 };
 
 let leftBattletagData = {};
@@ -104,7 +103,7 @@ function loadBattletag(battletag) {
   })
   .catch(function (error) {
     console.log(error);
-    dqs('#info-pane').innerHTML = `Your request for the battletag ${battletag.replace("-", "#")} failed. Make sure the battletag is correct or clear the field.`;
+    dqs('#info-pane').innerHTML = `<p>Your request for the battletag ${battletag.replace("-", "#")} failed. Make sure the battletag is correct or clear the field.</p>`;
   });
 }
 
@@ -115,11 +114,11 @@ function compareBattletags () {
   let leftWinrate = leftBattletagData.us.heroes.stats.competitive[leftHero].general_stats.win_percentage;
   let rightWinrate = rightBattletagData.us.heroes.stats.competitive[rightHero].general_stats.win_percentage;
   if (leftWinrate > rightWinrate) {
-    dqs('#info-pane').innerHTML = `${leftBattletag} wins!`;
-    dqs('#info-pane').innerHTML += `${leftWinrate} vs ${rightWinrate}`;
+    dqs('#info-pane').innerHTML += `<p><strong>${leftBattletag.slice(0, -5)} wins!</strong></p>`;
+    dqs('#info-pane').innerHTML += `<p>${leftBattletag.slice(0, -5)} had a win rate of ${leftWinrate} on ${heroMatchupInfo[leftHero].name}, compared to ${rightBattletag.slice(0, -5)}'s ${rightWinrate} on ${heroMatchupInfo[rightHero].name}.</p>`;
   }
   else if (rightWinrate > leftWinrate) {
-    dqs('#info-pane').innerHTML = `${rightBattletag} wins!`;
-    dqs('#info-pane').innerHTML += `${leftWinrate} vs ${rightWinrate}`;
+    dqs('#info-pane').innerHTML += `<p><strong>${rightBattletag.slice(0, -5)} wins!</p></strong>`;
+    dqs('#info-pane').innerHTML += `<p>${rightBattletag.slice(0, -5)} had a win rate of ${rightWinrate} on ${heroMatchupInfo[rightHero].name}, compared to ${leftBattletag.slice(0, -5)}'s ${leftWinrate} on ${heroMatchupInfo[leftHero].name}.</p>`;
   }
 }

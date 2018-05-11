@@ -16,7 +16,11 @@ document.addEventListener('DOMContentLoaded', function () {
 let leftHero = null,
     rightHero = null,
     selectedLeftHero = null,
-    selectedRightHero = null;
+    selectedRightHero = null,
+    leftBattletagData = {},
+    rightBattletagData = {},
+    leftBattletag = "",
+    rightBattletag = "";
 
 function setLeftHero (e) {
   let currentHero = e.target.dataset.hero;
@@ -73,11 +77,6 @@ function printHeroData() {
   dqs('#info-pane').innerHTML = `<p>${heroMatchupInfo[leftHero || rightHero].self}</p>
                                 <p><strong>Select another hero for matchup advice.</strong></p>`;
 };
-
-let leftBattletagData = {};
-let rightBattletagData = {};
-let leftBattletag = "";
-let rightBattletag = "";
 
 async function getBattletagData(e) {
   leftBattletag = document.getElementById('left-battletag').value.replace("#", "-");

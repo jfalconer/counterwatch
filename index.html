@@ -22,9 +22,9 @@
 
 
 
-    <div class="row">
+    <div class="row" id="left-picker">
 
-      <div class="col-3" id="left-picker">
+      <div class="col" >
 
         <div class="list-group left-heroes" id="left-offense-heroes">
           <a class="list-group-item list-group-item-action active">
@@ -40,7 +40,9 @@
           <a data-hero="tracer" class="hero-item list-group-item list-group-item-action">Tracer</a>
         </div>
 
-        <br/>
+      </div>
+
+      <div class="col" >
 
         <div class="list-group left-heroes" id="left-defense-heroes">
           <a class="list-group-item list-group-item-action active">
@@ -54,7 +56,8 @@
           <a data-hero="widowmaker" class="hero-item list-group-item list-group-item-action">Widowmaker</a>
         </div>
 
-        <br/>
+      </div>
+      <div class="col" >
 
         <div class="list-group left-heroes" id="left-tank-heroes">
           <a class="list-group-item list-group-item-action active">
@@ -68,7 +71,8 @@
           <a data-hero="zarya" class="hero-item list-group-item list-group-item-action">Zarya</a>
         </div>
 
-        <br/>
+      </div>
+      <div class="col" >
 
         <div class="list-group left-heroes" id="left-support-heroes">
           <a class="list-group-item list-group-item-action active">
@@ -83,18 +87,19 @@
           <a data-hero="zenyatta" class="hero-item list-group-item list-group-item-action">Zenyatta</a>
         </div>
       </div>
+    </div>
 
-      <div class="col-1"></div>
 
-      <div class="col-4">
+    <div class="row" id="info-container">
+      <div class="col">
         <div id="info-pane">
           <p>Select one hero for hero advice, or two for matchup advice. Battletags are optional.</p>
         </div>
       </div>
+    </div>
 
-      <div class="col-1"></div>
-      <div class="col-3" id="right-picker">
-
+    <div class="row" id="right-picker">
+      <div class="col">
         <div class="list-group right-heroes" id="right-offense-heroes">
           <a class="list-group-item list-group-item-action active">
           Offense
@@ -108,9 +113,9 @@
           <a data-hero="sombra" class="hero-item list-group-item list-group-item-action">Sombra</a>
           <a data-hero="tracer" class="hero-item list-group-item list-group-item-action">Tracer</a>
         </div>
+      </div>
 
-        <br/>
-
+      <div class="col">
         <div class="list-group right-heroes" id="right-defense-heroes">
           <a class="list-group-item list-group-item-action active">
           Defense
@@ -122,9 +127,9 @@
           <a data-hero="torbjorn" class="hero-item list-group-item list-group-item-action">Torbjörn</a>
           <a data-hero="widowmaker" class="hero-item list-group-item list-group-item-action">Widowmaker</a>
         </div>
+      </div>
 
-        <br/>
-
+      <div class="col">
         <div class="list-group right-heroes" id="right-tank-heroes">
           <a class="list-group-item list-group-item-action active">
           Tanks
@@ -136,9 +141,9 @@
           <a data-hero="winston" class="hero-item list-group-item list-group-item-action">Winston</a>
           <a data-hero="zarya" class="hero-item list-group-item list-group-item-action">Zarya</a>
         </div>
+      </div>
 
-        <br/>
-
+      <div class="col">
         <div class="list-group right-heroes" id="right-support-heroes">
           <a href="#" class="list-group-item list-group-item-action active">
           Support
@@ -151,7 +156,6 @@
           <a data-hero="symmetra" class="hero-item list-group-item list-group-item-action">Symmetra</a>
           <a data-hero="zenyatta" class="hero-item list-group-item list-group-item-action">Zenyatta</a>
         </div>
-
       </div>
     </div>
 

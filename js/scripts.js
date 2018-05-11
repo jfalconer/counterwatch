@@ -13,10 +13,10 @@ document.addEventListener('DOMContentLoaded', function () {
   dqsa('#matchem-button').forEach(clickMatchem => clickMatchem.addEventListener('click', getBattletagData));
 });
 
-let leftHero = null;
-let rightHero = null;
-let selectedLeftHero = null;
-let selectedRightHero = null;
+let leftHero = null,
+    rightHero = null,
+    selectedLeftHero = null,
+    selectedRightHero = null;
 
 function setLeftHero (e) {
   let currentHero = e.target.dataset.hero;

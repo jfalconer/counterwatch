@@ -23,6 +23,22 @@ body {
   padding:25px;
 }
 
+#left-picker {
+
+}
+
+#info-container {
+  padding: 25px 0 25px 0;
+}
+
+#info-pane {
+
+}
+
+#right-picker {
+
+}
+
 #battletag-selector {
   padding: 25px 0 25px 0;
 }
@@ -31,17 +47,9 @@ body {
 
 }
 
-#left-picker {
-
-}
-
-#info-pane {
 
 
-}
-#right-picker {
 
-}
 
 .active {
   background-color: #2f2526 !important;

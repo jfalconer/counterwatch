@@ -17,10 +17,10 @@ let leftHero = null,
     rightHero = null,
     selectedLeftHero = null,
     selectedRightHero = null,
-    leftBattletagData = {},
-    rightBattletagData = {},
-    leftBattletag = "",
-    rightBattletag = "";
+    leftBattletagData = null,
+    rightBattletagData = null,
+    leftBattletag = null,
+    rightBattletag = null;
 
 function setLeftHero (e) {
   let currentHero = e.target.dataset.hero;
@@ -39,6 +39,7 @@ function setLeftHero (e) {
   console.log(`${leftHero} selected`);
   selectedLeftHero = e.target;
   buildContent();
+  compareBattletags();
 };
 
 function setRightHero (e) {
@@ -58,6 +59,7 @@ function setRightHero (e) {
   console.log(`${rightHero} selected`);
   selectedRightHero = e.target;
   buildContent();
+  compareBattletags();
 };
 
 function buildContent () {
@@ -110,14 +112,42 @@ function compareBattletags () {
   if (!leftHero || !rightHero) {
     return false;
   }
-  let leftWinrate = leftBattletagData.us.heroes.stats.competitive[leftHero].general_stats.win_percentage;
-  let rightWinrate = rightBattletagData.us.heroes.stats.competitive[rightHero].general_stats.win_percentage;
-  if (leftWinrate > rightWinrate) {
+  let leftWinrate = leftBattletagData.us.heroes.stats.competitive[leftHero].general_stats.win_percentage,
+      leftGamesWon = leftBattletagData.us.heroes.stats.competitive[leftHero].general_stats.games_won,
+      leftCompRank = leftBattletagData.us.stats.competitive.overall_stats.comprank,
+      leftScore = Math.ceil(leftWinrate * leftCompRank / 100),
+      rightWinrate = rightBattletagData.us.heroes.stats.competitive[rightHero].general_stats.win_percentage,
+      rightGamesWon = rightBattletagData.us.heroes.stats.competitive[rightHero].general_stats.games_won,
+      rightCompRank = rightBattletagData.us.stats.competitive.overall_stats.comprank,
+      rightScore = Math.ceil(rightWinrate * rightCompRank / 100);
+  if (leftScore > rightScore) {
     dqs('#info-pane').innerHTML += `<p><strong>${leftBattletag.slice(0, -5)} wins!</strong></p>`;
-    dqs('#info-pane').innerHTML += `<p>${leftBattletag.slice(0, -5)} had a win rate of ${leftWinrate} on ${heroMatchupInfo[leftHero].name}, compared to ${rightBattletag.slice(0, -5)}'s ${rightWinrate} on ${heroMatchupInfo[rightHero].name}.</p>`;
+    dqs('#info-pane').innerHTML += `<p>${leftBattletag.slice(0, -5)} had a score of ${leftScore} on ${heroMatchupInfo[leftHero].name}, compared to ${rightBattletag.slice(0, -5)}'s ${rightScore} on ${heroMatchupInfo[rightHero].name}.</p>`;
   }
-  else if (rightWinrate > leftWinrate) {
+  else if (rightScore > leftScore) {
     dqs('#info-pane').innerHTML += `<p><strong>${rightBattletag.slice(0, -5)} wins!</p></strong>`;
-    dqs('#info-pane').innerHTML += `<p>${rightBattletag.slice(0, -5)} had a win rate of ${rightWinrate} on ${heroMatchupInfo[rightHero].name}, compared to ${leftBattletag.slice(0, -5)}'s ${leftWinrate} on ${heroMatchupInfo[leftHero].name}.</p>`;
+    dqs('#info-pane').innerHTML += `<p>${rightBattletag.slice(0, -5)} had a score of ${rightScore} on ${heroMatchupInfo[rightHero].name}, compared to ${leftBattletag.slice(0, -5)}'s ${leftScore} on ${heroMatchupInfo[leftHero].name}.</p>`;
   }
+  dqs('#info-pane').innerHTML += `<div class="row">
+  <!-- left player stats -->
+    <div class="col"></div>
+    <div class="col">
+      <p><strong>${leftBattletag.slice(0, -5)} as ${heroMatchupInfo[leftHero].name}</strong></p>
+      <ul>
+        <li>Win percentage: ${leftWinrate}</li>
+        <li>Games won: ${leftGamesWon}</li>
+        <li>Competitive rank: ${leftCompRank}</li>
+      </ul>
+    </div>
+  <!-- right player stats -->
+    <div class="col">
+      <p><strong>${rightBattletag.slice(0, -5)} as ${heroMatchupInfo[rightHero].name}</strong></p>
+      <ul>
+        <li>Win percentage: ${rightWinrate}</li>
+        <li>Games won: ${rightGamesWon}</li>
+        <li>Competitive rank: ${rightCompRank}</li>
+      </ul>
+    </div>
+    <div class="col"></div>
+  </div>`;
 }

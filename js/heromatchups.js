@@ -117,6 +117,7 @@ let heroMatchupInfo = {
     },
   },
   genji: {
+    name: `Genji`,
     self: ``,
     // Genji vs offense
     doomfist: {
@@ -232,6 +233,7 @@ let heroMatchupInfo = {
     },
   },
   mccree: {
+    name: `McCree`,
     self: ``,
     // offense
     doomfist: `McCree is a soft counter to McCree.`,
@@ -266,6 +268,7 @@ let heroMatchupInfo = {
     zenyatta: `McCree performs neutrally against Zenyatta.`
   },
   pharah: {
+    name: `Pharah`,
     self: ``,
     // offense
     doomfist: `Pharah is a hard counter to Doomfist.`,
@@ -300,6 +303,7 @@ let heroMatchupInfo = {
     zenyatta: `Pharah performs neutrally against Zenyatta.`
   },
   reaper: {
+    name: `Reaper`,
     self: ``,
     // offense
     doomfist: `Reaper performs neutrally against Doomfist.`,
@@ -334,6 +338,7 @@ let heroMatchupInfo = {
     zenyatta: `Reaper is a hard counter to Zenyatta.`
   },
   soldier76: {
+    name: `Soldier: 76`,
     self: ``,
     // offense
     doomfist: `Soldier is a soft counter to Doomfist.`,
@@ -368,6 +373,7 @@ let heroMatchupInfo = {
     zenyatta: `Soldier performs neutrally against Zenyatta.`
   },
   sombra: {
+    name: `Sombra`,
     self: ``,
     // offense
     doomfist: `Sombra is a hard counter to Doomfist.`,
@@ -402,6 +408,7 @@ let heroMatchupInfo = {
     zenyatta: `Sombra is a soft counter to Zenyatta.`
   },
   tracer: {
+    name: `Tracer`,
     self: ``,
     // offense
     doomfist: `Tracer performs neutrally against Doomfist.`,
@@ -437,6 +444,7 @@ let heroMatchupInfo = {
   },
   // defense
   bastion: {
+    name: `Bastion`,
     self: ``,
     // offense
     doomfist: `Bastion performs neutrally against Doomfist.`,
@@ -471,6 +479,7 @@ let heroMatchupInfo = {
     zenyatta: `Bastion performs neutrally against Zenyatta.`
   },
   hanzo: {
+    name: `Hanzo`,
     self: ``,
     // offense
     doomfist: `Hanzo performs neutrally against Doomfist.`,
@@ -505,6 +514,7 @@ let heroMatchupInfo = {
     zenyatta: `Hanzo performs neutrally against Zenyatta.`
   },
   junkrat: {
+    name: `Junkrat`,
     self: ``,
     // offense
     doomfist: `Junkrat performs neutrally against Doomfist.`,
@@ -539,6 +549,7 @@ let heroMatchupInfo = {
     zenyatta: `Junkrat performs neutrally against Zenyatta.`
   },
   mei: {
+    name: `Mei`,
     self: ``,
     // offense
     doomfist: `Mei performs neutrally against Doomfist.`,
@@ -573,6 +584,7 @@ let heroMatchupInfo = {
     zenyatta: `Mei performs neutrally against Zenyatta.`
   },
   torbjorn: {
+    name: `Torbjorn`,
     self: ``,
     // offense
     doomfist: `Torbjorn performs neutrally against Doomfist.`,
@@ -607,6 +619,7 @@ let heroMatchupInfo = {
     zenyatta: `Torbjorn performs neutrally against Zenyatta.`
   },
   widowmaker: {
+    name: `Widowmaker`,
     self: ``,
     // offense
     doomfist: ``,
@@ -677,6 +690,7 @@ let heroMatchupInfo = {
     zenyatta: `D.Va performs neutrally against Zenyatta.`
   },
   orisa: {
+    name: `Orisa`,
     self: ``,
     // offense
     doomfist: `Orisa is a soft counter to Doomfist.`,
@@ -711,6 +725,7 @@ let heroMatchupInfo = {
     zenyatta: `Orisa performs neutrally against Zenyatta.`
   },
   reinhardt: {
+    name: `Reinhardt`,
     self: ``,
     // offense
     doomfist: `Reinhardt is weak against Doomfist.`,
@@ -745,6 +760,7 @@ let heroMatchupInfo = {
     zenyatta: `Reinhardt performs neutrally against Zenyatta.`
   },
   roadhog: {
+    name: `Roadhog`,
     self: ``,
     // offense
     doomfist: `Roadhog performs neutrally against Doomfist.`,
@@ -779,6 +795,7 @@ let heroMatchupInfo = {
     zenyatta: `Roadhog performs neutrally against Zenyatta.`
   },
   winston: {
+    name: `Winston`,
     self: ``,
     // offense
     doomfist: ``,
@@ -813,6 +830,7 @@ let heroMatchupInfo = {
     zenyatta: `Winston is a hard counter to Zenyatta.`
   },
   zarya: {
+    name: `Zarya`,
     self: ``,
     // offense
     doomfist: `Zarya performs neutrally against Doomfist.`,
@@ -848,6 +866,7 @@ let heroMatchupInfo = {
   },
   // support
   ana: {
+    name: `Ana`,
     self: ``,
     // offense
     doomfist: `Ana performs neutrally against Doomfist.`,
@@ -882,6 +901,7 @@ let heroMatchupInfo = {
     zenyatta: `Ana is a soft counter to Zenyatta.`
   },
   brigitte: {
+    name: `Brigitte`,
     self: ``,
     // offense
     doomfist: `Brigitte performs neutrally against Doomfist.`,
@@ -916,6 +936,7 @@ let heroMatchupInfo = {
     zenyatta: `Brigitte performs neutrally against Zenyatta.`
   },
   lucio: {
+    name: `Lucio`,
     self: ``,
     // offense
     doomfist: `Lucio performs neutrally against Doomfist.`,
@@ -950,6 +971,7 @@ let heroMatchupInfo = {
     zenyatta: `Lucio performs neutrally against Zenyatta.`
   },
   mercy: {
+    name: `Mercy`,
     self: ``,
     // offense
     doomfist: `Mercy performs neutrally against Doomfist.`,
@@ -984,6 +1006,7 @@ let heroMatchupInfo = {
     zenyatta: `Mercy performs neutrally against Zenyatta.`
   },
   moira: {
+    name: `Moira`,
     self: ``,
     // offense
     doomfist: `Moira performs neutrally against Doomfist.`,
@@ -1018,6 +1041,7 @@ let heroMatchupInfo = {
     zenyatta: `Moira performs neutrally against Zenyatta.`
   },
   symmetra: {
+    name: `Symmetra`,
     self: ``,
     // offense
     doomfist: `Symmetra performs neutrally against Doomfist.`,
@@ -1052,6 +1076,7 @@ let heroMatchupInfo = {
     zenyatta: `Symmetra performs neutrally against Zenyatta.`
   },
   zenyatta: {
+    name: `Zenyatta`,
     self: ``,
     // offense
     doomfist: `Zenyatta performs neutrally against Doomfist.`,

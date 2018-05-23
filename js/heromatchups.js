@@ -3,6 +3,7 @@ let heroMatchupInfo = {
   doomfist: {
     name: `Doomfist`,
     self: ``,
+    role: `offense`,
     // Doomfist vs offense
     doomfist: {
       matchup: `neutral`,
@@ -119,6 +120,7 @@ let heroMatchupInfo = {
   genji: {
     name: `Genji`,
     self: ``,
+    role: `offense`,
     // Genji vs offense
     doomfist: {
       matchup: `weak`,
@@ -235,6 +237,7 @@ let heroMatchupInfo = {
   mccree: {
     name: `McCree`,
     self: ``,
+    role: `offense`,
     // offense
     doomfist: {
       matchup: `softcounter`,
@@ -351,6 +354,7 @@ let heroMatchupInfo = {
   pharah: {
     name: `Pharah`,
     self: ``,
+    role: `offense`,
     // offense
     doomfist: {
       matchup: `hardcounter`,
@@ -467,6 +471,7 @@ let heroMatchupInfo = {
   reaper: {
     name: `Reaper`,
     self: ``,
+    role: `offense`,
     // offense
     doomfist: {
       matchup: `neutral`,
@@ -583,6 +588,7 @@ let heroMatchupInfo = {
   soldier76: {
     name: `Soldier: 76`,
     self: ``,
+    role: `offense`,
     // offense
     doomfist: {
       matchup: `softcounter`,
@@ -699,6 +705,7 @@ let heroMatchupInfo = {
   sombra: {
     name: `Sombra`,
     self: ``,
+    role: `offense`,
     // offense
     doomfist: {
       matchup: `hardcounter`,
@@ -815,6 +822,7 @@ let heroMatchupInfo = {
   tracer: {
     name: `Tracer`,
     self: ``,
+    role: `offense`,
     // offense
     doomfist: {
       matchup: `neutral`,
@@ -932,6 +940,7 @@ let heroMatchupInfo = {
   bastion: {
     name: `Bastion`,
     self: ``,
+    role: `defense`,
     // offense
     doomfist: {
       matchup: `neutral`,
@@ -1048,6 +1057,7 @@ let heroMatchupInfo = {
   hanzo: {
     name: `Hanzo`,
     self: ``,
+    role: `defense`,
     // offense
     doomfist: {
       matchup: `neutral`,
@@ -1164,6 +1174,7 @@ let heroMatchupInfo = {
   junkrat: {
     name: `Junkrat`,
     self: ``,
+    role: `defense`,
     // offense
     doomfist: {
       matchup: `neutral`,
@@ -1280,6 +1291,7 @@ let heroMatchupInfo = {
   mei: {
     name: `Mei`,
     self: ``,
+    role: `defense`,
     // offense
     doomfist: {
       matchup: `neutral`,
@@ -1394,8 +1406,9 @@ let heroMatchupInfo = {
     },
   },
   torbjorn: {
-    name: `Torbjorn`,
+    name: `Torbjörn`,
     self: ``,
+    role: `defense`,
     // offense
     doomfist: {
       matchup: `neutral`,
@@ -1512,6 +1525,7 @@ let heroMatchupInfo = {
   widowmaker: {
     name: `Widowmaker`,
     self: ``,
+    role: `defense`,
     // offense
     doomfist: {
       matchup: `neutral`,
@@ -1629,6 +1643,7 @@ let heroMatchupInfo = {
   dva: {
     name: `D.Va`,
     self: ``,
+    role: `tank`,
     // offense
     doomfist: {
       matchup: `weak`,
@@ -1745,6 +1760,7 @@ let heroMatchupInfo = {
   orisa: {
     name: `Orisa`,
     self: ``,
+    role: `tank`,
     // offense
     doomfist: {
       matchup: `softcounter`,
@@ -1861,6 +1877,7 @@ let heroMatchupInfo = {
   reinhardt: {
     name: `Reinhardt`,
     self: ``,
+    role: `tank`,
     // offense
     doomfist: {
       matchup: `weak`,
@@ -1977,6 +1994,7 @@ let heroMatchupInfo = {
   roadhog: {
     name: `Roadhog`,
     self: ``,
+    role: `tank`,
     // offense
     doomfist: {
       matchup: `neutral`,
@@ -2093,6 +2111,7 @@ let heroMatchupInfo = {
   winston: {
     name: `Winston`,
     self: ``,
+    role: `tank`,
     // offense
     doomfist: {
       matchup: `neutral`,
@@ -2209,6 +2228,7 @@ let heroMatchupInfo = {
   zarya: {
     name: `Zarya`,
     self: ``,
+    role: `tank`,
     // offense
     doomfist: {
       matchup: `neutral`,
@@ -2326,6 +2346,7 @@ let heroMatchupInfo = {
   ana: {
     name: `Ana`,
     self: ``,
+    role: `support`,
     // offense
     doomfist: {
       matchup: `neutral`,
@@ -2442,6 +2463,7 @@ let heroMatchupInfo = {
   brigitte: {
     name: `Brigitte`,
     self: ``,
+    role: `support`,
     // offense
     doomfist: {
       matchup: `neutral`,
@@ -2556,8 +2578,9 @@ let heroMatchupInfo = {
     },
   },
   lucio: {
-    name: `Lucio`,
+    name: `Lúcio`,
     self: ``,
+    role: `support`,
     // offense
     doomfist: {
       matchup: `neutral`,
@@ -2674,6 +2697,7 @@ let heroMatchupInfo = {
   mercy: {
     name: `Mercy`,
     self: ``,
+    role: `support`,
     // offense
     doomfist: {
       matchup: `neutral`,
@@ -2790,6 +2814,7 @@ let heroMatchupInfo = {
   moira: {
     name: `Moira`,
     self: ``,
+    role: `support`,
     // offense
     doomfist: {
       matchup: `neutral`,
@@ -2906,6 +2931,7 @@ let heroMatchupInfo = {
   symmetra: {
     name: `Symmetra`,
     self: ``,
+    role: `support`,
     // offense
     doomfist: {
       matchup: `neutral`,
@@ -3022,6 +3048,7 @@ let heroMatchupInfo = {
   zenyatta: {
     name: `Zenyatta`,
     self: ``,
+    role: `support`,
     // offense
     doomfist: {
       matchup: `neutral`,

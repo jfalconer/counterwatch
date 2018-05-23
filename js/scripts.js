@@ -76,20 +76,27 @@ function printMatchupData() {
   let matchupString,
       matchType = heroMatchupInfo[leftHero][rightHero].matchup,
       matchStrategy = heroMatchupInfo[leftHero][rightHero].strategy;
-  if (matchType == `veryweak`) {
+  switch (matchType) {
+    case `veryweak`:
       matchupString = `<p>${heroMatchupInfo[leftHero].name} is very weak against ${heroMatchupInfo[rightHero].name}.</p>`;
-  } else if (matchType == `weak`) {
-    matchupString = `<p>${heroMatchupInfo[leftHero].name} is somewhat weak against ${heroMatchupInfo[rightHero].name}.</p>`;
-  } else if (matchType == `neutral`) {
-    matchupString = `<p>${heroMatchupInfo[leftHero].name} performs neutrally against ${heroMatchupInfo[rightHero].name}. Skill and overall team composition will decide the outcome.</p>`;
-  } else if (matchType == `softcounter`) {
-    matchupString = `<p>${heroMatchupInfo[leftHero].name} is a soft counter to ${heroMatchupInfo[rightHero].name}.</p>`;
-  } else if (matchType == `hardcounter`) {
-    matchupString = `<p>${heroMatchupInfo[leftHero].name} is a hard counter to ${heroMatchupInfo[rightHero].name}.</p>`;
+      break;
+    case `weak`:
+      matchupString = `<p>${heroMatchupInfo[leftHero].name} is somewhat weak against ${heroMatchupInfo[rightHero].name}.</p>`;
+      break;
+    case `neutral`:
+      matchupString = `<p>${heroMatchupInfo[leftHero].name} performs neutrally against ${heroMatchupInfo[rightHero].name}.</p>`;
+      break;
+    case `softcounter`:
+      matchupString = `<p>${heroMatchupInfo[leftHero].name} is a soft counter to ${heroMatchupInfo[rightHero].name}.</p>`;
+      break;
+    case `hardcounter`:
+      matchupString = `<p>${heroMatchupInfo[leftHero].name} is a hard counter to ${heroMatchupInfo[rightHero].name}.</p>`;
+      break;
   }
   if (matchStrategy) {
   matchupString += matchStrategy;
   }
+
   dqs('#info-pane').innerHTML = `<h3>${heroMatchupInfo[leftHero].name} vs ${heroMatchupInfo[rightHero].name}</h3>
   ${matchupString}`;
 };

@@ -1513,7 +1513,10 @@ let heroMatchupInfo = {
     name: `Widowmaker`,
     self: ``,
     // offense
-    doomfist: ``,
+    doomfist: {
+      matchup: `neutral`,
+      strategy: ``,
+    },
     genji: {
       matchup: `veryweak`,
       strategy: ``,
@@ -2091,7 +2094,10 @@ let heroMatchupInfo = {
     name: `Winston`,
     self: ``,
     // offense
-    doomfist: ``,
+    doomfist: {
+      matchup: `neutral`,
+      strategy: ``,
+    },
     genji: {
       matchup: `hardcounter`,
       strategy: ``,

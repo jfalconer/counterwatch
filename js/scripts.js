@@ -74,7 +74,8 @@ function buildContent () {
 
 function printMatchupData() {
   let matchupString,
-      matchType = heroMatchupInfo[leftHero][rightHero].matchup;
+      matchType = heroMatchupInfo[leftHero][rightHero].matchup,
+      matchStrategy = heroMatchupInfo[leftHero][rightHero].strategy;
   if (matchType == `veryweak`) {
       matchupString = `<p>${heroMatchupInfo[leftHero].name} is very weak against ${heroMatchupInfo[rightHero].name}.</p>`;
   } else if (matchType == `weak`) {
@@ -86,8 +87,9 @@ function printMatchupData() {
   } else if (matchType == `hardcounter`) {
     matchupString = `<p>${heroMatchupInfo[leftHero].name} is a hard counter to ${heroMatchupInfo[rightHero].name}.</p>`;
   }
-  matchupString += heroMatchupInfo[leftHero][rightHero].strategy;
-
+  if (matchStrategy) {
+  matchupString += matchStrategy;
+  }
   dqs('#info-pane').innerHTML = `<h3>${heroMatchupInfo[leftHero].name} vs ${heroMatchupInfo[rightHero].name}</h3>
   ${matchupString}`;
 };

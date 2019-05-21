@@ -83,15 +83,14 @@ function printMatchupData() {
     case `weak`:
       matchupString = `<p>${heroMatchupInfo[leftHero].name} is somewhat weak against ${heroMatchupInfo[rightHero].name}.</p>`;
       break;
-    case `neutral`:
-      matchupString = `<p>${heroMatchupInfo[leftHero].name} performs neutrally against ${heroMatchupInfo[rightHero].name}.</p>`;
-      break;
     case `softcounter`:
       matchupString = `<p>${heroMatchupInfo[leftHero].name} is a soft counter to ${heroMatchupInfo[rightHero].name}.</p>`;
       break;
     case `hardcounter`:
       matchupString = `<p>${heroMatchupInfo[leftHero].name} is a hard counter to ${heroMatchupInfo[rightHero].name}.</p>`;
       break;
+    default:
+      matchupString = `<p>${heroMatchupInfo[leftHero].name} performs neutrally against ${heroMatchupInfo[rightHero].name}.</p>`;
   }
   if (matchStrategy) {
   matchupString += matchStrategy;
